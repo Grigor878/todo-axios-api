@@ -1,38 +1,86 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  outline: none;
+}
+
+.app {
+  font-family: "Roboto Mono", serif;
   text-align: center;
+  background-color: #005644;
+  height: 100%;
+  padding: 50px;
+  color: #ffafa2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todolist {
+  margin: auto;
+  max-width: 425px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+  color: #ffafa2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.form {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input {
+  background-color: transparent;
+  border: 2px solid #ffafa2;
+  color: #ffafa2;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 22px;
+  font-family: inherit;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submit {
+  background-color: transparent;
+  border: 2px solid #ffafa2;
+  color: #ffafa2;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 22px;
+  margin-left: 8px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #ffafa2;
+  border: 2px solid #ffafa2;
+  color: #005644;
+  padding: 10px;
+}
+
+.todo {
+  text-align: left;
+  margin-top: 8px;
+  background-color: transparent;
+  border: 2px solid #ffafa2;
+  color: #ffafa2;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 22px;
+  font-family: inherit;
+}
+
+.todo-text {}
+
+.todo-delete {
+  float: right;
+  padding: 0px 4px;
+  cursor: pointer;
+}
+
+.todo-delete:hover {
+  background-color: #ffafa21c;
+  border-radius: 6px;
 }
